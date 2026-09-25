@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:18.553
+Ein infizierter Windows-Host bedeutet meist sechs Tools, sechs Formate und keine Chain of Custody. Kage ist eine Triage-Konsole — sie führt die gesamte Untersuchung als eine versiegelte Kette aus: von der Erfassung bis zu einem Bericht, den Sie verteidigen können. So funktioniert es.
+
+00:00:20.353 --> 00:00:38.183
+Mit einem Tool sammeln, mit dem zweiten eine Timeline bauen, mit dem dritten scannen, mit dem vierten anreichern — und alles in ein Dokument kopieren. Jeder Schritt verliert Kontext; niemand beweist, dass die Beweise unverändert blieben. Der Analyst selbst wird zur Integrationsschicht.
+
+00:00:39.983 --> 00:00:54.919
+Kage ist eine lokale Web-Konsole: Python, FastAPI, ein Prozess auf Loopback. Es orchestriert bewährte Tools, streamt jeden Befehl live in den Browser und hält die Analyse serverseitig — ein Neuladen verliert keine Arbeit.
+
+00:00:56.719 --> 00:01:20.591
+Arbeitsbereich vorbereiten, von Defender ausnehmen, Tools finden, Artefakte sammeln, Systemkontext erfassen, Sigma-Regeln aktualisieren, Timeline bauen, analysieren, optional mit THOR Lite scannen, Indikatoren anreichern und die Zusammenfassung schreiben. Ankreuzen, was Sie wollen; jeden Schritt einzeln erneut ausführen, ohne erneut zu sammeln.
+
+00:01:22.391 --> 00:01:44.015
+Der Score hat vier unabhängige, gedeckelte Achsen: Schweregrad, Kill-Chain-Reichweite, Indikator-Reputation und Bestätigung. Keine einzelne Quelle kann dominieren — eine laute Regel erreicht allein durch Menge kein mehrstufiges Urteil. Und Vertrauen ist vom Schweregrad getrennt: Es zählt, wie viele unabhängige Quellen übereinstimmen.
+
+00:01:45.815 --> 00:02:04.401
+Jeder abgeschlossene Schritt wird mit SHA-256 versiegelt; das Siegel nennt auch seinen Umfang: den Inhalt einer benannten Datei oder nur den Ausführungsnachweis. Führen Sie den Schritt später erneut aus — der Beweis, dass das Artefakt unverändert ist; der Bericht trägt die ganze Kette.
+
+00:02:06.201 --> 00:02:26.685
+Ereignisprotokolle erzählen, was geschah; nicht, was gerade geschieht. Kage erfasst die Gegenwart schreibgeschützt: lauschende Sockets mit passendem Prozess, lokale Konten, Datenträger-Root-Anomalien und die Logging-Abdeckung der Maschine — denn ein Urteil ist nur so viel wert, wie der Host aufzuzeichnen erlaubt hat.
+
+00:02:28.485 --> 00:02:48.716
+Der Demo-Modus erzeugt eine synthetische Intrusion — kodiertes PowerShell, Credential-Diebstahl, Persistenz, Command-and-Control, gelöschte Schattenkopien — und vergräbt sie unter vierhundertzwanzig Rauschereignissen. Die ganze Kette läuft auf dieser Fiktion. Nichts wird gelesen, gescannt oder verändert.
+
+00:02:50.516 --> 00:03:10.147
+Es ist eine Konsole, keine Desktop-App — deshalb läuft Kage headless auf dem verdächtigen Rechner, während Sie von Ihrem eigenen arbeiten. Starten Sie erhöht als geplante Aufgabe — kein UAC-Dialog, kein Fenster — leiten Sie den Port über SSH weiter; Beweise verlassen nie die Festplatte des Hosts.
+
+00:03:11.947 --> 00:03:34.814
+Der Score ist eine Triage-Schätzung, kein Beweis. Die Kette ist Windows-zentriert. THOR Lite braucht eine manuelle Registrierung. API-Schlüssel sind optional; ohne sie fällt die Zusammenfassung auf den lokalen Bericht zurück. Und die Konsole ist auf Loopback beschränkt: bewusst ohne Authentifizierung, also nur per Tunnel erreichen, niemals exponieren.
+
+00:03:36.614 --> 00:03:56.822
+Elf Schritte in einer Konsole, einhundertfünfzehn Tests und eine Demo, die bei einer synthetischen Intrusion achtzig von hundert erreicht — mit jeder Score-Komponente sichtbar. Dieses Video praktiziert auch, was es lehrt: siebenunddreißig Untertitelsprachen und zwanzig Narrationsspuren aus einem Repository.
+
+00:03:58.622 --> 00:04:15.161
+Kage ist Open Source unter der MIT-Lizenz, gebaut von k0r1m. Führen Sie es nur auf Hosts aus, die Ihnen gehören oder für die Sie eine schriftliche Erlaubnis haben. Das Tool, die Anleitung und dieses Kit — alles öffentlich; Links in der Beschreibung.

@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:18.315
+Một máy chủ Windows bị nhiễm thường có nghĩa là sáu công cụ, sáu định dạng và không có chuỗi giám sát. Kage là một bảng điều khiển triage — chạy toàn bộ điều tra như một chuỗi niêm phong: từ thu thập đến báo cáo bạn có thể bảo vệ. Hãy xem cách nó hoạt động.
+
+00:00:20.115 --> 00:00:38.483
+Thu thập bằng một công cụ, dựng dòng thời gian bằng công cụ khác, quét bằng công cụ thứ ba, làm giàu bằng công cụ thứ tư — rồi dán tất cả vào một tài liệu. Mỗi bước đều mất ngữ cảnh; không ai chứng minh được bằng chứng không thay đổi. Chính nhà phân tích trở thành lớp tích hợp.
+
+00:00:40.283 --> 00:00:56.788
+Kage là bảng điều khiển web cục bộ: Python, FastAPI, một tiến trình trên loopback. Nó điều phối các công cụ đã được kiểm chứng, truyền trực tiếp mọi lệnh tới trình duyệt và giữ phân tích ở phía máy chủ — tải lại trang không mất việc.
+
+00:00:58.588 --> 00:01:22.050
+Chuẩn bị không gian làm việc, loại trừ khỏi Defender, định vị công cụ, thu thập hiện vật, ghi lại ngữ cảnh hệ thống, cập nhật quy tắc Sigma, dựng dòng thời gian, phân tích, tùy chọn quét bằng THOR Lite, làm giàu chỉ báo và viết tóm tắt. Đánh dấu bước bạn muốn; chạy lại bất kỳ bước nào riêng lẻ, không cần thu thập lại.
+
+00:01:23.850 --> 00:01:45.536
+Điểm số có bốn trục độc lập và có giới hạn: mức độ nghiêm trọng, phạm vi kill chain, uy tín chỉ báo và sự xác nhận chéo. Không nguồn nào có thể chi phối — một quy tắc ồn ào không đạt được kết luận nhiều giai đoạn chỉ bằng số lượng. Và độ tin cậy tách khỏi mức độ nghiêm trọng: nó đếm xem bao nhiêu nguồn độc lập đồng thuận.
+
+00:01:47.336 --> 00:02:04.896
+Mỗi bước hoàn thành được niêm phong bằng SHA-256; niêm phong cũng nêu rõ phạm vi: nội dung của tệp được chỉ định, hay chỉ bản ghi thực thi. Chạy lại bước đó sau này — bằng chứng rằng hiện vật không thay đổi; báo cáo mang theo toàn bộ chuỗi.
+
+00:02:06.696 --> 00:02:26.736
+Nhật ký sự kiện kể điều đã xảy ra; không kể điều đang xảy ra. Kage ghi lại hiện tại ở chế độ chỉ đọc: socket đang lắng nghe khớp với tiến trình, tài khoản cục bộ, bất thường ở gốc đĩa và phạm vi ghi nhật ký của máy — vì phán quyết chỉ đáng giá bằng những gì máy chủ cho phép ghi lại.
+
+00:02:28.536 --> 00:02:48.116
+Chế độ demo tạo một cuộc xâm nhập tổng hợp — PowerShell mã hóa, đánh cắp thông tin đăng nhập, duy trì, chỉ huy và điều khiển, xóa bản sao bóng — và chôn nó dưới bốn trăm hai mươi sự kiện nhiễu. Cả chuỗi chạy trên câu chuyện hư cấu đó. Không đọc, không quét, không thay đổi gì.
+
+00:02:49.916 --> 00:03:10.515
+Đây là bảng điều khiển, không phải ứng dụng máy tính — nên Kage chạy không giao diện trên máy bị nghi ngờ trong khi bạn làm việc từ máy của mình. Khởi động với quyền cao như tác vụ theo lịch — không có hộp thoại UAC, không cửa sổ — chuyển tiếp cổng qua SSH; bằng chứng không bao giờ rời khỏi đĩa của máy chủ.
+
+00:03:12.315 --> 00:03:35.626
+Điểm số là ước lượng triage, không phải bằng chứng. Chuỗi tập trung vào Windows. THOR Lite cần đăng ký thủ công. Khóa API là tùy chọn; không có chúng, tóm tắt quay về báo cáo cục bộ. Và bảng điều khiển chỉ gắn với loopback: không có xác thực theo thiết kế, nên truy cập qua đường hầm, đừng bao giờ phơi ra ngoài.
+
+00:03:37.426 --> 00:03:58.069
+Mười một bước trong một bảng điều khiển, một trăm mười lăm bài kiểm tra và một demo đạt tám mươi trên một trăm trước cuộc xâm nhập tổng hợp — với mọi thành phần điểm số được hiển thị. Video này cũng thực hành điều nó dạy: ba mươi bảy ngôn ngữ phụ đề và hai mươi bản thu âm thuyết minh, từ một kho lưu trữ.
+
+00:03:59.869 --> 00:04:16.989
+Kage là mã nguồn mở theo giấy phép MIT, do k0r1m tạo ra. Chỉ chạy trên máy chủ thuộc sở hữu của bạn hoặc bạn có giấy phép bằng văn bản. Công cụ, hướng dẫn và bộ tài liệu này — tất cả đều công khai; liên kết trong phần mô tả.

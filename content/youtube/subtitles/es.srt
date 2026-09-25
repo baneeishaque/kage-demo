@@ -1,0 +1,47 @@
+1
+00:00:00,400 --> 00:00:15,098
+Un host Windows infectado suele significar seis herramientas, seis formatos y ninguna cadena de custodia. Kage es una consola de triaje — ejecuta toda la investigación como una cadena sellada: desde la recolección hasta un informe que puedes defender. Mira cómo funciona.
+
+2
+00:00:16,898 --> 00:00:31,602
+Recolecta con una herramienta, construye la línea de tiempo con otra, escanea con una tercera, enriquece con una cuarta — y pega todo en un documento. Cada paso pierde contexto; nada demuestra que la evidencia no cambió. El analista se convierte en la capa de integración.
+
+3
+00:00:33,402 --> 00:00:45,654
+Kage es una consola web local: Python, FastAPI, un proceso en loopback. Orquesta herramientas ya probadas, transmite cada comando en vivo al navegador y mantiene el análisis en el servidor — refrescar no pierde el trabajo.
+
+4
+00:00:47,454 --> 00:01:08,989
+Prepara el espacio, exclúyelo de Defender, localiza las herramientas, recolecta artefactos, captura el contexto del sistema, actualiza las reglas Sigma, construye la línea de tiempo, analiza, escanea opcionalmente con THOR Lite, enriquece indicadores y escribe el resumen. Marca lo que quieras; vuelve a ejecutar cualquier paso por separado, sin recolectar de nuevo.
+
+5
+00:01:10,789 --> 00:01:28,509
+La puntuación tiene cuatro ejes independientes y acotados: severidad, alcance de la kill chain, reputación de indicadores y corroboración. Ninguna fuente puede dominar — una regla ruidosa no llega a un veredicto multifase solo por volumen. Y la confianza va aparte de la severidad: cuenta cuántas fuentes independientes coinciden.
+
+6
+00:01:30,309 --> 00:01:44,916
+Cada paso completado se sella con SHA-256; el sello también declara su alcance: el contenido de un archivo nombrado, o solo el registro de ejecución. Vuelve a ejecutar el paso después — la prueba de que el artefacto no cambió; el informe lleva toda la cadena.
+
+7
+00:01:46,716 --> 00:02:02,307
+Los registros cuentan lo que pasó; no cuentan lo que está pasando. Kage captura el presente en solo lectura: sockets a la escucha con su proceso, cuentas locales, anomalías en la raíz del disco y la cobertura de registro de la máquina — porque un veredicto vale tanto como el host permitió registrar.
+
+8
+00:02:04,107 --> 00:02:20,284
+El modo demo crea una intrusión sintética — PowerShell codificado, robo de credenciales, persistencia, mando y control, borrado de copias de sombra — y la entierra bajo cuatrocientos veinte eventos de ruido. Toda la cadena corre sobre esa ficción. No lee, no escanea, no cambia nada.
+
+9
+00:02:22,084 --> 00:02:36,949
+Es una consola, no una app de escritorio — así que Kage corre sin interfaz en la máquina sospechosa mientras trabajas desde la tuya. Inícialo elevado como tarea programada — sin aviso de UAC, sin ventana — reenvía el puerto por SSH; la evidencia nunca sale del disco del host.
+
+10
+00:02:38,749 --> 00:02:56,399
+La puntuación es una estimación de triaje, no una prueba. La cadena se centra en Windows. THOR Lite requiere registro manual. Las claves API son opcionales; sin ellas el resumen vuelve al informe local. Y la consola está atada a loopback: sin autenticación por diseño, así que accede por túnel, nunca la expongas.
+
+11
+00:02:58,199 --> 00:03:13,830
+Once pasos en una consola, ciento quince pruebas y una demo que marca ochenta sobre cien en una intrusión sintética — con cada componente de la puntuación a la vista. Este vídeo también practica lo que enseña: treinta y siete idiomas de subtítulos y veinte pistas de narración, desde un solo repositorio.
+
+12
+00:03:15,630 --> 00:03:28,707
+Kage es código abierto bajo licencia MIT, creado por k0r1m. Ejecútalo solo en hosts que te pertenezcan o para los que tengas permiso por escrito. La herramienta, la guía y este kit — todo público; enlaces en la descripción.

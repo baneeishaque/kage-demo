@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:20.022
+Host Windows yang terinfeksi biasanya berarti enam alat, enam format, dan tanpa chain of custody. Kage adalah konsol triage — menjalankan seluruh investigasi sebagai satu rantai tersegel: dari pengumpulan hingga laporan yang bisa Anda pertahankan. Lihat cara kerjanya.
+
+00:00:21.822 --> 00:00:41.481
+Kumpulkan dengan satu alat, buat timeline dengan alat lain, pindai dengan yang ketiga, perkaya dengan yang keempat — lalu tempel semuanya ke satu dokumen. Setiap langkah kehilangan konteks; tak ada yang membuktikan bukti tidak berubah. Penyidik sendiri menjadi lapisan integrasi.
+
+00:00:43.281 --> 00:01:01.245
+Kage adalah konsol web lokal: Python, FastAPI, satu proses di loopback. Ia mengorkestrasi alat yang sudah terbukti, menyiarkan setiap perintah langsung ke browser, dan menyimpan analisis di sisi server — refresh tidak menghilangkan pekerjaan.
+
+00:01:03.045 --> 00:01:27.087
+Siapkan ruang kerja, kecualikan dari Defender, temukan alat, kumpulkan artefak, tangkap konteks sistem, perbarui aturan Sigma, bangun timeline, analisis, pindai opsional dengan THOR Lite, perkaya indikator, dan tulis ringkasan. Centang yang Anda mau; jalankan ulang langkah mana pun sendirian, tanpa mengumpulkan lagi.
+
+00:01:28.887 --> 00:01:52.866
+Skor punya empat sumbu independen dan terbatas: tingkat keparahan, jangkauan kill chain, reputasi indikator, dan korroborasi. Tidak ada satu sumber yang bisa mendominasi — aturan berisik tidak mencapai putusan multi-tahap hanya dengan jumlah. Dan keyakinan terpisah dari keparahan: ia menghitung berapa sumber independen yang setuju.
+
+00:01:54.666 --> 00:02:13.829
+Setiap langkah yang selesai disegel dengan SHA-256; segel juga menyatakan cakupannya: isi file yang disebut, atau hanya catatan eksekusi. Jalankan ulang langkah itu nanti — bukti bahwa artefak tidak berubah; laporan membawa seluruh rantai.
+
+00:02:15.629 --> 00:02:37.976
+Log peristiwa menceritakan apa yang terjadi; tidak menceritakan apa yang sedang terjadi. Kage menangkap masa kini secara read-only: soket mendengarkan yang cocok dengan proses, akun lokal, kejanggalan root disk, dan cakupan logging mesin — karena putusan hanya bernilai sejauh yang host setujui untuk dicatat.
+
+00:02:39.776 --> 00:03:01.785
+Mode demo membuat intrusi sintetis — PowerShell terenkode, pencurian kredensial, persistensi, command-and-control, penghapusan shadow copy — dan menguburnya di bawah empat ratus dua puluh peristiwa berisik. Seluruh rantai berjalan pada fantasi itu. Tidak membaca, memindai, atau mengubah apa pun.
+
+00:03:03.585 --> 00:03:24.487
+Ini konsol, bukan aplikasi desktop — jadi Kage berjalan headless di mesin yang dicurigai sementara Anda bekerja dari mesin Anda. Jalankan elevated sebagai scheduled task — tanpa prompt UAC, tanpa jendela — teruskan port lewat SSH; bukti tidak pernah meninggalkan disk host.
+
+00:03:26.287 --> 00:03:48.593
+Skor adalah perkiraan triage, bukan bukti. Rantai berfokus pada Windows. THOR Lite butuh pendaftaran manual. Kunci API opsional; tanpanya ringkasan kembali ke laporan lokal. Dan konsol hanya terikat ke loopback: tanpa autentikasi secara desain, jadi akses lewat tunnel, jangan pernah diekspos.
+
+00:03:50.393 --> 00:04:12.912
+Sebelas langkah dalam satu konsol, seratus lima belas tes, dan demo yang mencetak delapan puluh dari seratus pada intrusi sintetis — dengan setiap komponen skor ditampilkan. Video ini juga mempraktikkan yang diajarkannya: tiga puluh tujuh bahasa subtitle dan dua puluh trek narasi, dari satu repositori.
+
+00:04:14.712 --> 00:04:30.923
+Kage open source di bawah lisensi MIT, dibuat oleh k0r1m. Jalankan hanya pada host milik Anda atau yang Anda punya izin tertulis. Alat, panduan, dan kit ini — semuanya publik; tautan di deskripsi.
