@@ -1,0 +1,50 @@
+{
+  "intro": {
+    "title": "Um host. Onze passos selados.",
+    "narration": "Um host Windows infectado costuma significar seis ferramentas, seis formatos e nenhuma cadeia de custódia. Kage é um console de triagem — conduz toda a investigação como uma cadeia selada: da coleta a um relatório que você consegue defender. Veja como funciona."
+  },
+  "problem": {
+    "title": "Triagem significa dez ferramentas e uma caixa.",
+    "narration": "Colete com uma ferramenta, monte a linha do tempo com outra, escaneie com uma terceira, enriqueça com uma quarta — e cole tudo num documento. Cada passo perde contexto; nada prova que a evidência não mudou. O analista vira a própria camada de integração."
+  },
+  "architecture": {
+    "title": "Um console, não mais um coletor.",
+    "narration": "Kage é um console web local: Python, FastAPI, um processo em loopback. Orquestra ferramentas consagradas, transmite cada comando ao vivo para o navegador e mantém a análise no servidor — atualizar a página não perde o trabalho."
+  },
+  "chain": {
+    "title": "Onze passos, selados e reexecutáveis.",
+    "narration": "Prepare o espaço, exclua do Defender, localize as ferramentas, colete os artefatos, capture o contexto do sistema, atualize as regras Sigma, monte a linha do tempo, analise, escaneie opcionalmente com o THOR Lite, enriqueça os indicadores e escreva o resumo. Marque o que quiser; reexecute qualquer passo sozinho, sem coletar de novo."
+  },
+  "scoring": {
+    "title": "Uma pontuação discutível.",
+    "narration": "A pontuação tem quatro eixos independentes e limitados: severidade, alcance da kill chain, reputação dos indicadores e corroboração. Nenhuma fonte pode dominar — uma regra barulhenta não chega a um veredito multifásico só por volume. E a confiança é separada da severidade: conta quantas fontes independentes concordam."
+  },
+  "seals": {
+    "title": "Cadeia de custódia, por padrão.",
+    "narration": "Cada passo concluído é selado com SHA-256; o selo também declara o que cobre: o conteúdo de um arquivo nomeado, ou apenas o registro de execução. Reexecute o passo depois — a prova de que o artefato não mudou; o relatório carrega a cadeia inteira."
+  },
+  "context": {
+    "title": "O que os logs nunca contam.",
+    "narration": "Os logs contam o que aconteceu; não contam o que está acontecendo. Kage captura o presente em somente leitura: sockets à escuta com o processo correspondente, contas locais, anomalias na raiz do disco e a cobertura de log da máquina — porque um veredito vale o que o host permitiu registrar."
+  },
+  "demo": {
+    "title": "Pratique antes de tocar no host.",
+    "narration": "O modo demo cria uma intrusão sintética — PowerShell codificado, roubo de credenciais, persistência, comando e controle, remoção de cópias de sombra — e a enterra sob quatrocentos e vinte eventos de ruído. A cadeia inteira roda nessa ficção. Não lê, não escaneia, não altera nada."
+  },
+  "headless": {
+    "title": "Execute sem interface, de qualquer lugar.",
+    "narration": "É um console, não um app de desktop — então o Kage roda sem interface na máquina suspeita enquanto você trabalha da sua. Inicie elevado como tarefa agendada — sem prompt do UAC, sem janela — encaminhe a porta via SSH; a evidência nunca sai do disco do host."
+  },
+  "tradeoffs": {
+    "title": "Os trade-offs, com honestidade.",
+    "narration": "A pontuação é uma estimativa de triagem, não uma prova. A cadeia é centrada em Windows. O THOR Lite exige registro manual. As chaves de API são opcionais; sem elas o resumo volta ao relatório local. E o console é preso ao loopback: sem autenticação por design, então acesse por túnel, nunca o exponha."
+  },
+  "results": {
+    "title": "No que dá tudo isso.",
+    "narration": "Onze passos num console, cento e quinze testes e uma demo que marca oitenta de cem numa intrusão sintética — com cada componente da pontuação à mostra. Este vídeo também pratica o que ensina: trinta e sete idiomas de legenda e vinte faixas de narração, de um único repositório."
+  },
+  "outro": {
+    "title": "Execute em um host suspeito.",
+    "narration": "Kage é open source sob licença MIT, criado por k0r1m. Execute apenas em hosts seus ou para os quais você tenha autorização por escrito. A ferramenta, o guia e este kit — tudo público; links na descrição."
+  }
+}

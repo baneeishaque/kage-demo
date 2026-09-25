@@ -1,0 +1,50 @@
+{
+  "intro": {
+    "title": "Tek host. On bir mühürlü adım.",
+    "narration": "Enfekte bir Windows host genelde altı araç, altı biçim ve zincir muhafazası olmaması demektir. Kage bir triyaj konsoludur — tüm incelemeyi tek bir mühürlü zincir olarak yürütür: toplamadan savunabileceğiniz bir rapora kadar. Nasıl çalıştığını görün."
+  },
+  "problem": {
+    "title": "Triyaj, on araç ve bir sandık demek.",
+    "narration": "Bir araçla topla, diğeriyle zaman çizelgesi kur, üçüncüsüyle tara, dördüncüsüyle zenginleştir — sonra hepsini tek bir belgeye yapıştır. Her adımda bağlam kaybolur; kanıtın değişmediğini kimse kanıtlamaz. Analistin kendisi entegrasyon katmanı olur."
+  },
+  "architecture": {
+    "title": "Tek konsol, bir başka toplayıcı değil.",
+    "narration": "Kage yerel bir web konsoludur: Python, FastAPI, loopback üzerinde tek süreç. Kanıtlanmış araçları yönetir, her komutu tarayıcıya canlı akıtır ve analizi sunucu tarafında tutar — sayfayı yenilemek işi kaybetmez."
+  },
+  "chain": {
+    "title": "On bir adım, mühürlü ve yeniden çalıştırılabilir.",
+    "narration": "Çalışma alanını hazırla, Defender'dan hariç tut, araçları bul, eserleri topla, sistem bağlamını yakala, Sigma kurallarını güncelle, zaman çizelgesini kur, analiz et, istersen THOR Lite ile tara, göstergeleri zenginleştir ve özeti yaz. İstediğini işaretle; herhangi bir adımı tek başına yeniden çalıştır, yeniden toplamadan."
+  },
+  "scoring": {
+    "title": "Tartışılabilir bir puan.",
+    "narration": "Puanın dört bağımsız ve sınırlı ekseni var: önem derecesi, kill chain kapsamı, gösterge itibarı ve teyit. Tek bir kaynak baskın olamaz — gürültülü bir kural yalnızca hacimle çok aşamalı bir hükme ulaşamaz. Ve güven, önem derecesinden ayrıdır: kaç bağımsız kaynağın hemfikir olduğunu sayar."
+  },
+  "seals": {
+    "title": "Zincir muhafazası, varsayılan olarak.",
+    "narration": "Tamamlanan her adım SHA-256 ile mühürlenir; mühür neyi kapsadığını da bildirir: adı geçen dosyanın içeriğini ya da yalnızca yürütme kaydını. Adımı sonra yeniden çalıştır — eserin değişmediğinin kanıtı; rapor zincirin tamamını taşır."
+  },
+  "context": {
+    "title": "Olay günlüklerinin asla anlatmadıkları.",
+    "narration": "Olay günlükleri ne olduğunu anlatır; şu an ne olduğunu anlatmaz. Kage şimdiki zamanı salt okunur yakalar: süreçle eşleşen dinleyen soketler, yerel hesaplar, disk kökü anormallikleri ve makinenin günlükleme kapsamı — çünkü hüküm, host'un kaydetmeye izin verdiği kadarıyla değerlidir."
+  },
+  "demo": {
+    "title": "Host'a dokunmadan önce prova yap.",
+    "narration": "Demo modu sentetik bir saldırı üretir — kodlanmış PowerShell, kimlik bilgisi hırsızlığı, kalıcılık, komuta ve kontrol, gölge kopya silme — ve onu dört yüz yirmi gürültü olayının altına gömer. Tüm zincir bu kurgu üzerinde çalışır. Hiçbir şey okumaz, taramaz, değiştirmez."
+  },
+  "headless": {
+    "title": "Her yerden arayüzsüz çalıştır.",
+    "narration": "Bu bir konsol, masaüstü uygulaması değil — bu yüzden Kage şüpheli makinede arayüzsüz çalışır, siz kendi makinenizden çalışırsınız. Zamanlanmış görev olarak yükseltilmiş başlatın — UAC istemi yok, pencere yok — portu SSH ile yönlendirin; kanıtlar host'un diskinden asla çıkmaz."
+  },
+  "tradeoffs": {
+    "title": "Ödünleşimler, dürüstçe.",
+    "narration": "Puan bir triyaj tahminidir, kanıt değil. Zincir Windows odaklıdır. THOR Lite elle kayıt ister. API anahtarları isteğe bağlıdır; onlar olmadan özet yerel rapora döner. Ve konsol loopback'e bağlıdır: tasarım gereği kimlik doğrulama yok, bu yüzden tünelle erişin, asla dışa açmayın."
+  },
+  "results": {
+    "title": "Sonunda ne elde edilir.",
+    "narration": "Tek konsolda on bir adım, yüz on beş test ve sentetik bir saldırıda yüz üzerinden seksen alan bir demo — puanın her bileşeni gösterilir. Bu video da öğrettiğini uygular: otuz yedi altyazı dili ve yirmi anlatım parçası, tek bir depodan."
+  },
+  "outro": {
+    "title": "Şüpheli bir host üzerinde çalıştır.",
+    "narration": "Kage MIT lisansıyla açık kaynak, yapımcısı k0r1m. Yalnızca size ait veya yazılı izniniz olan host'larda çalıştırın. Araç, kılavuz ve bu kit — hepsi açık; bağlantılar açıklamada."
+  }
+}

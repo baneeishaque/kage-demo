@@ -1,0 +1,50 @@
+{
+  "intro": {
+    "title": "Un hôte. Onze étapes scellées.",
+    "narration": "Un hôte Windows infecté, c'est souvent six outils, six formats et aucune chaîne de possession. Kage est une console de triage — elle mène toute l'enquête comme une chaîne scellée : de la collecte à un rapport que vous pouvez défendre. Voyons comment ça marche."
+  },
+  "problem": {
+    "title": "Le triage, c'est dix outils et une caisse.",
+    "narration": "Collecter avec un outil, bâtir la chronologie avec un autre, analyser avec un troisième, enrichir avec un quatrième — puis tout coller dans un document. Chaque étape perd le contexte ; rien ne prouve que les preuves n'ont pas changé. L'analyste devient lui-même la couche d'intégration."
+  },
+  "architecture": {
+    "title": "Une console, pas un collecteur de plus.",
+    "narration": "Kage est une console web locale : Python, FastAPI, un seul processus sur la boucle locale. Elle orchestre des outils éprouvés, diffuse chaque commande en direct vers le navigateur et garde l'analyse côté serveur — un rafraîchissement ne perd rien."
+  },
+  "chain": {
+    "title": "Onze étapes, scellées et rejouables.",
+    "narration": "Préparez l'espace de travail, excluez-le de Defender, localisez les outils, collectez les artefacts, capturez le contexte système, mettez à jour les règles Sigma, bâtissez la chronologie, analysez, scannez éventuellement avec THOR Lite, enrichissez les indicateurs et rédigez la synthèse. Cochez ce que vous voulez ; relancez n'importe quelle étape seule, sans recollecter."
+  },
+  "scoring": {
+    "title": "Un score discutable.",
+    "narration": "Le score a quatre axes indépendants et plafonnés : gravité, portée de la kill chain, réputation des indicateurs et corroboration. Aucune source ne peut dominer — une règle bruyante n'atteint pas un verdict multi-étapes par le seul volume. Et la confiance est distincte de la gravité : elle compte combien de sources indépendantes concordent."
+  },
+  "seals": {
+    "title": "Chaîne de possession, par défaut.",
+    "narration": "Chaque étape terminée est scellée en SHA-256 ; le sceau précise aussi sa portée : le contenu d'un fichier nommé, ou seulement la trace d'exécution. Relancez l'étape plus tard — la preuve que l'artefact n'a pas changé ; le rapport porte toute la chaîne."
+  },
+  "context": {
+    "title": "Ce que les journaux ne disent jamais.",
+    "narration": "Les journaux racontent ce qui s'est passé ; pas ce qui se passe. Kage capture le présent en lecture seule : sockets en écoute associées à leur processus, comptes locaux, anomalies à la racine du disque et couverture de journalisation — car un verdict vaut ce que l'hôte a permis d'enregistrer."
+  },
+  "demo": {
+    "title": "S'entraîner avant de toucher l'hôte.",
+    "narration": "Le mode démo fabrique une intrusion synthétique — PowerShell encodé, vol d'identifiants, persistance, commande et contrôle, suppression des clichés instantanés — et l'enterre sous quatre cent vingt événements de bruit. Toute la chaîne tourne sur cette fiction. Rien n'est lu, scanné ni modifié."
+  },
+  "headless": {
+    "title": "Exécutez sans interface, de partout.",
+    "narration": "C'est une console, pas une application de bureau — Kage tourne donc sans interface sur la machine suspecte pendant que vous travaillez depuis la vôtre. Lancez-le élevé en tâche planifiée — pas d'invite UAC, pas de fenêtre — transférez le port par SSH ; les preuves ne quittent jamais le disque de l'hôte."
+  },
+  "tradeoffs": {
+    "title": "Les compromis, honnêtement.",
+    "narration": "Le score est une estimation de triage, pas une preuve. La chaîne est centrée Windows. THOR Lite exige un enregistrement manuel. Les clés API sont optionnelles ; sans elles, la synthèse retombe sur le rapport local. Et la console est liée à la boucle locale : sans authentification par conception, passez donc par un tunnel, ne l'exposez jamais."
+  },
+  "results": {
+    "title": "Ce qu'on obtient au final.",
+    "narration": "Onze étapes dans une console, cent quinze tests, et une démo qui marque quatre-vingts sur cent sur une intrusion synthétique — chaque composante du score affichée. Cette vidéo pratique aussi ce qu'elle enseigne : trente-sept langues de sous-titres et vingt pistes de narration, depuis un seul dépôt."
+  },
+  "outro": {
+    "title": "À exécuter sur un hôte suspect.",
+    "narration": "Kage est open source sous licence MIT, créé par k0r1m. Exécutez-le uniquement sur des hôtes qui vous appartiennent ou pour lesquels vous avez une autorisation écrite. L'outil, le guide et ce kit — tout est public ; liens en description."
+  }
+}
