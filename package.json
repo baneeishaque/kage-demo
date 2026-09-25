@@ -1,0 +1,19 @@
+{
+  "name": "kage-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Independent field guide and content kit for Kage, the open-source Windows DFIR triage console: demo mode and headless-over-SSH workflows, plus a reproducible 37-locale video pipeline.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "markdownlint": "markdownlint-cli2 \"**/*.md\"",
+    "markdownlint:fix": "markdownlint-cli2 --fix \"**/*.md\"",
+    "render-slides": "node content/youtube/render-slides.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "markdownlint-cli2": "0.23.3"
+  }
+}
