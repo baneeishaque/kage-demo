@@ -1,22 +1,25 @@
 # Content kit
 
 Everything needed to present the Kage field guide: one canonical long-form article,
-platform-specific adaptations, and a multilingual video pipeline.
+platform-specific adaptations, a Medium funnel, four training programs, and a multilingual
+video pipeline.
 
 ## Asset map
 
-| File                            | Platform                     | Format                              | Length           |
-| ------------------------------- | ---------------------------- | ----------------------------------- | ---------------- |
-| [`blog-post.md`](blog-post.md)  | Own blog / dev.to / Hashnode | Canonical article (source of truth) | ~1,800 words     |
-| [`medium.md`](medium.md)        | Medium                       | Adapted article + metadata          | ~1,500 words     |
-| [`linkedin.md`](linkedin.md)    | LinkedIn                     | Two posts: announcement + deep dive | 130–220 words    |
-| [`x-thread.md`](x-thread.md)    | X / Twitter                  | 12-post thread                      | 280 chars/post   |
-| [`facebook.md`](facebook.md)    | Facebook                     | Group/Page post                     | ~180 words       |
-| [`whatsapp.md`](whatsapp.md)    | WhatsApp                     | Community broadcast + Status        | 60–120 words     |
-| [`instagram.md`](instagram.md)  | Instagram                    | 10-slide carousel + Reel caption    | Slides + caption |
-| [`snapchat.md`](snapchat.md)    | Snapchat                     | Spotlight script                    | 35 seconds       |
-| [`reels.md`](reels.md)          | Reels / Shorts / TikTok      | Three short-form scripts            | 30–45 s each     |
-| [`youtube/`](youtube/)          | YouTube                      | Full video pipeline (37 locales)    | ~4 minutes       |
+| File                                        | Platform                     | Format                              | Length           |
+| ------------------------------------------- | ---------------------------- | ----------------------------------- | ---------------- |
+| [`blog-post.md`](blog-post.md)              | Own blog / dev.to / Hashnode | Canonical article (source of truth) | ~1,800 words     |
+| [`medium.md`](medium.md)                    | Medium                       | Adapted article + metadata          | ~1,500 words     |
+| [`linkedin.md`](linkedin.md)                | LinkedIn                     | Two posts: announcement + deep dive | 130–220 words    |
+| [`x-thread.md`](x-thread.md)                | X / Twitter                  | 12-post thread                      | 280 chars/post   |
+| [`facebook.md`](facebook.md)                | Facebook                     | Group/Page post                     | ~180 words       |
+| [`whatsapp.md`](whatsapp.md)                | WhatsApp                     | Community broadcast + Status        | 60–120 words     |
+| [`instagram.md`](instagram.md)              | Instagram                    | 10-slide carousel + Reel caption    | Slides + caption |
+| [`snapchat.md`](snapchat.md)                | Snapchat                     | Spotlight script                    | 35 seconds       |
+| [`reels.md`](reels.md)                      | Reels / Shorts / TikTok      | Three short-form scripts            | 30–45 s each     |
+| [`youtube/`](youtube/)                      | YouTube                      | Full video pipeline (37 locales)    | ~4 minutes       |
+| [`funnel-medium/`](funnel-medium/README.md) | Medium funnel                | Deep dive + 9 adaptations           | 10 assets        |
+| [`training/`](training/README.md)           | Training                     | Four delivery formats               | 5 files          |
 
 ## Publishing order
 
@@ -49,6 +52,17 @@ platform-specific adaptations, and a multilingual video pipeline.
   (chain-of-custody panel), `shot-seals.png` (the SEALED lines), `shot-score.png` (four-axis
   breakdown), `shot-timeline.png` (alerts/timeline), `shot-system.png` (system context),
   `shot-summary.png` (the written summary), `shot-terminal.png` (the `--demo` launch).
+
+## Medium funnel and training
+
+- [`funnel-medium/`](funnel-medium/README.md) — a second, standalone campaign: a ~2,000-word
+  Medium deep dive plus nine platform adaptations, all driving traffic to the article (UTM
+  campaign `kage-headless-medium`). It has its own asset map and publishing order, and it
+  links back to this kit's canonical article only as background.
+- [`training/`](training/README.md) — four ready-to-deliver programs built on the guide: a
+  90-minute webinar (ending in a Q&A session), a self-paced free course, a four-hour hands-on
+  workshop, and a three-day professional course. All exercises run in demo mode; real-host
+  labs use trainer-owned VMs.
 
 ## Video pipeline (YouTube)
 

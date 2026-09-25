@@ -11,6 +11,7 @@ tool's own source and documentation. Nothing here is a substitute for the tool's
 | [`trade-offs.md`](trade-offs.md)     | What the tool does not do, and the limits worth knowing first        |
 | [`demo-mode.md`](demo-mode.md)       | What the synthetic intrusion contains and what a demo run proves     |
 | [`headless-ssh.md`](headless-ssh.md) | Running it elevated and headless on a remote Windows host over SSH   |
+| [`explainers/`](explainers/)         | Line-by-line walkthroughs of the chain and seals, the score, and the server |
 
 ## Ground rules used throughout
 

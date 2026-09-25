@@ -10,7 +10,7 @@ triage console — covering two operator workflows end to end:
 
 This repository does not contain the tool. It is documentation produced from a real demo run,
 plus the content kit that publishes it: one canonical article, platform-specific adaptations,
-and a reproducible 37-locale video pipeline.
+a Medium funnel, four training programs, and a reproducible 37-locale video pipeline.
 
 **The tool: [github.com/karim852/Kage-DFIR-toolkit](https://github.com/karim852/Kage-DFIR-toolkit)**
 **Live demo: [demo-kumo-kage.vercel.app](https://demo-kumo-kage.vercel.app/)**
@@ -23,8 +23,11 @@ and a reproducible 37-locale video pipeline.
 | [`docs/trade-offs.md`](docs/trade-offs.md)                       | The limits worth knowing before pointing it at a host             |
 | [`docs/demo-mode.md`](docs/demo-mode.md)                         | Running and reading the synthetic intrusion                       |
 | [`docs/headless-ssh.md`](docs/headless-ssh.md)                   | Elevated, headless operation over SSH — full command reference    |
+| [`docs/explainers/`](docs/explainers/)                           | Line-by-line code walkthroughs: chain and seals, scoring, server  |
 | [`content/`](content/README.md)                                  | Publishing kit: canonical article + platform adaptations          |
 | [`content/youtube/`](content/youtube/README.md)                  | Video pipeline: 37 locales, 20 narrations, one master MKV         |
+| [`content/funnel-medium/`](content/funnel-medium/README.md)      | Medium funnel: deep dive + nine platform adaptations              |
+| [`content/training/`](content/training/README.md)                | Training programs: webinar, free course, workshop, pro course     |
 
 ## Quick start — demo mode
 
